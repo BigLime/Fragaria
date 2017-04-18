@@ -42,6 +42,10 @@ extern NSString * const ro_MGSFOSyntaxColouring; // readonly
 
 @interface MGSFragaria : NSObject
 {
+    id docSpec;
+    NSSet* objectGetterKeys;
+    NSSet* objectSetterKeys;
+    
 	@private
 	MGSExtraInterfaceController *extraInterfaceController;
 }

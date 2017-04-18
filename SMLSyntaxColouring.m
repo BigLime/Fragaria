@@ -43,6 +43,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 - (void)setColour:(NSDictionary *)colour range:(NSRange)range;
 - (void)highlightLineRange:(NSRange)lineRange;
 - (void)undoManagerDidUndo:(NSNotification *)aNote;
+
+
 @end
 
 @implementation SMLSyntaxColouring

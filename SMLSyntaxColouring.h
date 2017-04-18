@@ -53,6 +53,44 @@ Unless required by applicable law or agreed to in writing, software distributed 
 	NSTimer *autocompleteWordsTimer;
 
 	NSRange lastLineHighlightRange;
+    
+    NSString*           functionDefinition;
+    NSString*           removeFromFunction;
+    NSUndoManager*      undoManager;
+    
+    NSCharacterSet *attributesCharacterSet;
+    NSCharacterSet *beginVariable;
+    NSCharacterSet *endVariable;
+    NSCharacterSet *letterCharacterSet;
+    NSCharacterSet *keywordEndCharacterSet;
+    NSCharacterSet *keywordStartCharacterSet;
+    NSCharacterSet *numberCharacterStartSet;
+    NSCharacterSet *numberCharacterEndSet;
+    
+    
+    NSString *beginCommand;
+    NSString *endCommand;
+    NSString *beginInstruction;
+    NSString *endInstruction;
+    NSString *firstString;
+    NSString *secondString;
+    NSString *firstSingleLineComment;
+    NSString *secondSingleLineComment;
+    
+    NSString *beginFirstMultiLineComment;
+    NSString *endFirstMultiLineComment;
+    NSString *beginSecondMultiLineComment;
+    NSString *endSecondMultiLineComment;
+    
+    NSString *searchString;
+    
+    NSMutableArray *singleLineComments;
+    NSMutableArray *multiLineComments;
+    
+    NSArray     *keywordsAndAutocompleteWords;
+    NSSet       *keywords;
+    NSSet       *autocompleteWords;
+    NSArray     *syntaxErrors;
 }
 
 @property BOOL reactToChanges;
